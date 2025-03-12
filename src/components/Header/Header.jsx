@@ -92,7 +92,7 @@ function Header() {
                         />
                       </svg>
                     </div>
-                    <p className="header__nav-link-text">Профиль</p>
+                    <p className="header__nav-link-text">Заказы</p>
                   </button>
                 </Link>
               </li>

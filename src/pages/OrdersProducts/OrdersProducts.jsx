@@ -44,7 +44,7 @@ function OrdersProducts({ orderCaramel }) {
     <section className="products ">
       <div className="products__container container">
         <div className="products__inner-wrapper">
-          {orderCaramel.length === 0 ? (
+          {!isLoading && orderCaramel.length === 0 ? (
             <ProductsEmpty
               title={'У вас нет заказов :('}
               desc={'Вы еще не оформили ни одного заказа в нашем магазине'}

@@ -23,7 +23,7 @@ function FavoriteProducts() {
     <section className="products">
       <div className="products__container container">
         <div className="products__inner-wrapper">
-          {favoriteCaramel.length === 0 ? (
+          {!isLoading && favoriteCaramel.length === 0 ? (
             <ProductsEmpty title={'Закладок нет :('} desc={'Вы ничего не добавляли в закладки'} img={favoriteEmpty} />
           ) : (
             <div className="products__inner">
