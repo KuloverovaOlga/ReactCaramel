@@ -30,7 +30,6 @@ function Card({ img, name, price, id, unique, desc, favorite = false, thickness,
 
   const setCurrentObj = () => {
     setCurrentItem(obj);
-    console.log(obj);
   };
 
   return (
