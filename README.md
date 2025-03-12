@@ -14,7 +14,7 @@
 
 ---
 
-[Demo Link <br>![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://kuloverovaolga.github.io/CRUD/)
+[Demo Link <br>![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://kuloverovaolga.github.io/ReactCaramel/)
 
 <h2>💁 Info:</h2> 
 
