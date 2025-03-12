@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReactCaramel/static/css/main.df906252.css",
-    "main.js": "/ReactCaramel/static/js/main.0cde835e.js",
+    "main.js": "/ReactCaramel/static/js/main.349b55c4.js",
     "static/media/Inter-SemiBold.woff2": "/ReactCaramel/static/media/Inter-SemiBold.1b12911183d4d0726dd4.woff2",
     "static/media/Inter-Bold.woff2": "/ReactCaramel/static/media/Inter-Bold.4f0caf5ae9e89afce04f.woff2",
     "static/media/Inter-Medium.woff2": "/ReactCaramel/static/media/Inter-Medium.3db408952a8a32914124.woff2",
@@ -17,10 +17,10 @@
     "index.html": "/ReactCaramel/index.html",
     "static/media/plus.svg": "/ReactCaramel/static/media/plus.4f1bd7c87349cc427f6631bb58be9a20.svg",
     "main.df906252.css.map": "/ReactCaramel/static/css/main.df906252.css.map",
-    "main.0cde835e.js.map": "/ReactCaramel/static/js/main.0cde835e.js.map"
+    "main.349b55c4.js.map": "/ReactCaramel/static/js/main.349b55c4.js.map"
   },
   "entrypoints": [
     "static/css/main.df906252.css",
-    "static/js/main.0cde835e.js"
+    "static/js/main.349b55c4.js"
   ]
 }
