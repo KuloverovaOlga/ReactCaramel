@@ -1,0 +1,173 @@
+@import '../../scss/colors.scss';
+.header {
+  border-bottom: 0.1rem solid #eaeaea;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3000;
+  background: $white;
+  border-radius: 2rem 2rem 0 0;
+
+ 
+  /* .header__container */
+
+  &__container {
+    position: relative;
+    z-index: 5;
+  }
+
+  /* .header__inner */
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.3rem 0;
+    @include small-tablet {
+      padding: 3rem 0;
+    }
+  }
+
+  /* .header__logo-box */
+
+  &__logo-box {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  /* .header__logo-svg-box */
+
+  &__logo-svg-box {
+    width: 6rem;
+    height: 6rem;
+    flex-shrink: 0;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @include small-tablet {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+
+  /* .header__logo-text-box */
+
+  &__logo-text-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .header__logo-title */
+
+  &__logo-title {
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    @include small-tablet {
+      font-size: 2.8rem;
+    }
+  }
+
+  /* .header__logo-subtitle */
+
+  &__logo-subtitle {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $grayText;
+    @include small-tablet {
+      font-size: 2rem;
+    }
+  }
+
+  /* .header__nav */
+
+  &__nav {
+  }
+
+  /* .header__nav-list */
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+
+    @include small-tablet {
+      gap: 0.6rem;
+    }
+  }
+
+  /* .header__nav-item */
+
+  &__nav-item {
+  }
+
+  /* .header__nav-item-link */
+
+  &__nav-item-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    @include small-tablet {
+      width: 8rem;
+      height: 8rem;
+      justify-content: center;
+    }
+  }
+
+  /* .header__nav-link-svg-box */
+
+  &__nav-link-svg-box {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      & path {
+        transition: fill 0.3s, stroke 0.3s;
+      }
+    }
+
+    @include small-tablet {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    &.isFavorite {
+      & svg path {
+        fill: #9cf036;
+      }
+    }
+    &.isBasket {
+      & svg path {
+        stroke: #9cf036;
+      }
+    }
+  }
+
+  /* .header__nav-link-text */
+
+  &__nav-link-text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $grayText;
+    & span {
+      font-weight: 700;
+    }
+    @include small-tablet {
+      display: none;
+    }
+
+    &:hover {
+    }
+  }
+}

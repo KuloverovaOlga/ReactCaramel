@@ -1,0 +1,223 @@
+@import '../scss/colors.scss';
+
+.products {
+  margin: 4rem 0;
+  flex-grow: 1;
+  @include small-tablet {
+    margin: 6rem 0;
+  }
+
+  /* .products__container */
+
+  &__container {
+  }
+
+  /* .products__inner */
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    @include small-tablet {
+      gap: 6rem;
+    }
+  }
+
+  /* .products__title-box */
+
+  &__title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 4.9rem;
+
+    @include small-tablet {
+      flex-direction: column;
+      gap: 6rem;
+      align-items: flex-start;
+    }
+  }
+
+  /* .products__title */
+
+  &__title {
+    font-weight: 700;
+    font-size: 3.2rem;
+
+    @include small-tablet {
+      font-size: 4.8rem;
+    }
+  }
+
+  /* .products__search-box */
+
+  &__search-box {
+    cursor: pointer;
+    padding: 1.5rem 1.8rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    border: 0.1rem solid #e2e2e2;
+    border-radius: 1rem;
+    width: 25rem;
+    position: relative;
+    @include small-tablet {
+      width: 100%;
+      border: 0.2rem solid #e2e2e2;
+      border-radius: 2rem;
+      gap: 2.4rem;
+      padding: 3rem 3.6rem;
+    }
+  }
+
+  &__search-svg-clear-box {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include small-tablet {
+      width: 6rem;
+      height: 6rem;
+    }
+    &:hover {
+      & svg {
+        scale: 1.2;
+      }
+    }
+    & svg {
+      width: 1rem;
+      height: 1rem;
+      object-fit: cover;
+      transition: scale 0.3s;
+      transform-origin: center center;
+      @include small-tablet {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+  /* .products__search-svg-box */
+
+  &__search-svg-box {
+    width: 1.6rem;
+    height: 1.6rem;
+    flex-shrink: 0;
+    @include small-tablet {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  /*   products__search-input*/
+
+  &__search-input {
+    font-weight: 400;
+    font-size: 1.4rem;
+    flex-grow: 1;
+    width: 100%;
+
+    @include small-tablet {
+      font-size: 2.8rem;
+    }
+    &::placeholder {
+      color: $grayText;
+    }
+  }
+
+  /* .products__list */
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  /* .products__order-list */
+
+  &__order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    @include small-tablet {
+      gap: 6rem;
+    }
+  }
+
+  /* .products__order-item */
+
+  &__order-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    @include small-tablet {
+      gap: 3rem;
+    }
+  }
+
+  /* .products__order-item-header */
+
+  &__order-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    @include small-tablet {
+      gap: 2rem;
+    }
+  }
+
+  /* .products__order-item-title */
+
+  &__order-item-title {
+    font-size: 2.6rem;
+    @include small-tablet {
+      font-size: 4rem;
+    }
+  }
+  &__order-item-line {
+    flex-grow: 1;
+    height: 0.1rem;
+    border: 0.1rem dashed #00000019;
+    @include small-tablet {
+      height: 0.2rem;
+      border: 0.2rem dashed #00000019;
+    }
+  }
+
+  /* .products__order-item-info-box */
+
+  &__order-item-info-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    @include small-tablet {
+      font-size: 2.4rem;
+    }
+  }
+
+  /* .products__order-item-date */
+
+  &__order-item-date {
+  }
+
+  /* .products__order-item-time */
+
+  &__order-item-time {
+  }
+}
